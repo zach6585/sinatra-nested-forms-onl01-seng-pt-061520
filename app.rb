@@ -16,7 +16,7 @@ module FormsLab
     
     post '/pirates' do
       binding.pry
-      @a = Pirate.new(params[:pirate][:name], params[:pirate][:weight], params[:pirate][:height]
+      @a = Pirate.new(params[:pirate][:name], params[:pirate][:weight], params[:pirate][:height])
       erb :'pirates/show'
       
     end 
