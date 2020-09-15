@@ -14,7 +14,7 @@ module FormsLab
     end 
     
     post '/pirates' do
-      a= params[pirate[name]]
+      a= params[:pirate[name]]
       erb :'pirates/show'
     end 
 
